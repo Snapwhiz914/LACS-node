@@ -26,8 +26,8 @@ This code assumes you already have:
  - UFW installed and set up
 
 ```bash
-git clone https://github.com/Snapwhiz914/LACS
-cd LACS
+git clone https://github.com/Snapwhiz914/LACS-node
+cd LACS-node
 chmod +x install.sh
 ./install.sh
 ```
