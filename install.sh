@@ -23,10 +23,10 @@ apt install at
 #Create a config file
 
 KEY=$(echo $RANDOM | md5sum | head -c 20; echo;)
-CONFIG_TEMPLATE='key: ${KEY}
-bind_addr: ""
+CONFIG_TEMPLATE="key: $KEY
+bind_addr: ''
 port: 5227
-'
+"
 
 if [ -f "/etc/lacs-node.yaml" ]
 then
@@ -59,5 +59,6 @@ else
     exit
 fi
 
+echo "Your auto-generated key: $KEY"
 echo "Done. Have fun with a secure system. Make sure to edit your configuration file at /etc/lacs-node.yaml, then run systemctl start lacs-node.service."
 echo "Check the output above and make sure at was installed."
