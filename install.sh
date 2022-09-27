@@ -49,8 +49,8 @@ ExecStart=start-LACS-node
 
 [Install]
 WantedBy=multi-user.target'
-touch /lib/systemd/system/lacs_node.service
-echo "$SYSTEMD_FILE" > /lib/systemd/system/lacs_node.service
+touch /etc/systemd/system/lacs_node.service
+echo "$SYSTEMD_FILE" > /etc/systemd/system/lacs_node.service
 systemctl daemon-reload
 if systemctl enable lacs_node.service ; then
     echo "Service installed successfully. LACS Node will run on boot."
