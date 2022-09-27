@@ -50,9 +50,9 @@ If you want it bound to just one address, put that address in instead.
 
 #### Don't forget to update your config on the main server!
 
-But first, get your auto-generated key from /etc/lacs-node.yaml and save it for the next step.
-Next, you'll need the IP address of the node server that is accessible from the main server.
-Finally, if you changed your port from the default, make sure you know what it is.
+1. Get your auto-generated key from /etc/lacs-node.yaml and save it for the next step.
+2. Next, you'll need the IP address of the node server that is accessible from the main server.
+3. Finally, if you changed your port from the default, make sure you know what it is.
 
 At the bottom of your configuration, add a snipet that looks like this:
 ```yaml
