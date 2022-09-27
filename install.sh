@@ -45,7 +45,7 @@ StartLimitIntervalSec=0
 [Service]
 Type=simple
 User=root
-ExecStart=start-LACS-node
+ExecStart=start-LACS_node
 
 [Install]
 WantedBy=multi-user.target'
