@@ -7,7 +7,7 @@ fi
 
 #Install packages
 #Uninstall in case already installed
-python3 -m pip uninstall -y lacs-node
+python3 -m pip uninstall -y lacs_node
 
 if python3 -m pip install .; then
     echo "Package install succeeded."
