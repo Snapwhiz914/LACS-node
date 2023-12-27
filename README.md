@@ -2,16 +2,15 @@
 
 <p align=center><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/pyyaml"> <img alt="GitHub" src="https://img.shields.io/github/license/Snapwhiz914/LACS-node"> </p>
 
-Before reading...
-See the [main](https://github.com/Snapwhiz914/LACS) project.
+Before reading, see the [main](https://github.com/Snapwhiz914/LACS) project if you haven't already
 
 ## Summary
-This is an extension of the main project ^ that allows firewall changes to be securely replicated to other servers.
+This is an extension of the main project linked above that allows firewall changes to be securely replicated to other servers.
 
 ## How it works
 
 1. The main LACS program runs on a different server, and when it wants to change the firewall, it sends a command to its node servers to change thier firewalls.
-2. The server running the node program recieves these changes through a simple HTTP API request and adds the allow rule to the firewall, then uses at to schedule its removal.
+2. The server running the node program recieves these changes through a simple HTTP API request and adds the allow rule to the firewall, then uses `at` to schedule its removal. 
 
 ## Quick start
 
@@ -75,12 +74,12 @@ You must run ```systemctl restart lacs-node.service``` after editing your config
 ## Notes/Requirments:
  - Any linux OS that supports UFW and python should be able to run this program.
  - The auto-generated key should be secure enough, but it can be anything you like.
- - SSL is not supported for now, mostly because this is supposed to be run on a secure LAN not accessible from the internets
+ - SSL is not supported for now, mostly because this is supposed to be run on a secure LAN not accessible from the internet
 
 ## Contributing
 
 Be sure to read the CONTRIBUTING.md file before you submit a pull request
 
 ## Future
-
- - I'll get SSL support if need be.
+ - SSL Support
+ - Docker container compatibility
